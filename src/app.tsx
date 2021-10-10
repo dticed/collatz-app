@@ -27,7 +27,6 @@ function App () {
     }, 500)
   }, [dataCollatz])
 
-
   return (
     <>
       <Canvas dataCollatz={dataCollatz} />
