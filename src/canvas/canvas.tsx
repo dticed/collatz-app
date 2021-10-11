@@ -1,6 +1,5 @@
 import { Line } from 'react-chartjs-2'
 
-
 function Canvas ({ dataCollatzX, dataCollatzY }: any) {
   return (
     <Line
