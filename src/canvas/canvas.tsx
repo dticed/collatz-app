@@ -1,18 +1,21 @@
 import { Line } from 'react-chartjs-2'
 
-function Canvas ({ dataCollatz }: any) {
+
+function Canvas ({ dataCollatzX, dataCollatzY }: any) {
   return (
     <Line
-      data={{
-        labels: dataCollatz,
-        datasets: [
-          {
-            label: 'collatz value: ' + dataCollatz[dataCollatz.length - 1],
-            data: dataCollatz,
-            borderWidth: 1,
-          },
-        ],
-      }}
+      data={
+        {
+          labels: dataCollatzX,
+          datasets: [
+            {
+              label: 'collatz value: ' + dataCollatzX[dataCollatzX.length - 1],
+              data: dataCollatzY,
+              borderWidth: 1,
+            },
+          ],
+        }
+      }
       height={400}
       width={600}
     />
